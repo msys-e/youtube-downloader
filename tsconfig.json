@@ -1,13 +1,13 @@
 {
     "compilerOptions": {
+        "module": "commonjs",
+        "target": "es6",
         "outDir": "./dist",
+        "lib": [
+            "es6"
+        ],
         "sourceMap": true,
-        "module": "es6",
-        "target": "es5",
-        "moduleResolution": "node",
-        "removeComments": true
+        "rootDir": "src",
+        "strict": true
     },
-    "include": [
-        "./src/**/*"
-    ]
 }
