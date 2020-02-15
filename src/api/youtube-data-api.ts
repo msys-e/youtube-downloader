@@ -8,10 +8,8 @@ export class YoutubeDataApi {
         ).items.map(item => item.snippet.resourceId.videoId);
     }
 
-    async isVideo(id: string): Promise<boolean> {
-        return (
-            (await (await this.restAdapter.searchVideoForId(id)).items
-                .length) !== 0
-        );
+    async getVideoTitle(id: string): Promise<string | undefined> {
+        return await (await this.restAdapter.searchVideoForId(id)).items[0]
+            ?.snippet?.title;
     }
 }

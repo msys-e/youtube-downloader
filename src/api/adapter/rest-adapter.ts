@@ -23,7 +23,7 @@ export class RestAdapter {
 
     searchVideoForId(id: string): Promise<SearchVideoResponse> {
         const params = new URLSearchParams({
-            part: 'id',
+            part: 'snippet',
             id: id,
             key: CONFIG.YOUTUBE_DATA_API_TOKEN,
         });
