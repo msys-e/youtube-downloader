@@ -1,9 +1,9 @@
 {
   "name": "youtube-downloader",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "app.js",
   "scripts": {
-    "start": "npm run tsc && node dist/src/index.js",
+    "start": "npm run tsc && node dist/src/app.js",
     "tsc": "tsc"
   },
   "repository": {
