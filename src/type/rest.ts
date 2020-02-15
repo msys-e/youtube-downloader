@@ -22,7 +22,7 @@ export type SearchVideoResponse = {
 };
 
 export type VideoItem = {
-    kind: string;
-    etag: string;
-    id: string;
+    snippet: {
+        title: string;
+    };
 };
