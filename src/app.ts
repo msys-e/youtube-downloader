@@ -12,13 +12,15 @@ export class App {
     async downloadMp3(videoId: string): Promise<void> {
         const title = await this.youtubeDataApi.getVideoTitle(videoId);
         if (title !== undefined) {
-            let result = true;
-            await this.youtubeDownload
-                .downloadMP3(videoId, title.replace(/\//, ''))
-                .catch(() => (result = false));
-            result
-                ? console.log(`${title} download complet`)
-                : console.log(`download error`);
+            try {
+                await this.youtubeDownload.downloadMP3(
+                    videoId,
+                    title.replace(/\//, ''),
+                );
+                console.log(`${title} download complet`);
+            } catch (error) {
+                console.log(`${title} download failed`);
+            }
         }
     }
 
