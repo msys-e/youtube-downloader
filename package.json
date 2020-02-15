@@ -11,7 +11,7 @@
     "url": "git+https://github.com/msys-e/youtube-downloader.git"
   },
   "author": "msys-e",
-  "license": "ISC",
+  "license": "MIT",
   "dependencies": {
     "fluent-ffmpeg": "^2.1.2",
     "isomorphic-fetch": "^2.2.1",
