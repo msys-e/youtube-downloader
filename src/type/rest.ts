@@ -16,4 +16,13 @@ export type PlayListRequestParams = {
     maxResults: string;
     key: string;
 };
-}
+
+export type SearchVideoResponse = {
+    items: VideoItem[];
+};
+
+export type VideoItem = {
+    kind: string;
+    etag: string;
+    id: string;
+};
