@@ -17,7 +17,7 @@ export class App {
                     videoId,
                     title.replace(/\//, ''),
                 );
-                console.log(`${title} download complet`);
+                console.log(`${title} download complete`);
             } catch (error) {
                 console.log(`${title} download failed`);
             }
