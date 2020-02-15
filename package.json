@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "main": "app.js",
   "scripts": {
-    "start": "npm run tsc && node dist/src/app.js",
+    "download:mp3": "npm run tsc && node dist/src/app.js",
     "tsc": "tsc"
   },
   "repository": {
