@@ -1,18 +1,19 @@
-export interface PlayListResponse {
-    items: ListItem[];
-}
+export type PlayListResponse = {
+    items: PlayListItem[];
+};
 
-export interface ListItem {
+export type PlayListItem = {
     snippet: {
         resourceId: {
             videoId: string;
         };
     };
-}
+};
 
-export interface PlayListRequestParams {
+export type PlayListRequestParams = {
     part: string;
     playlistId: string;
     maxResults: string;
     key: string;
+};
 }
